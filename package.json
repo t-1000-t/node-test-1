@@ -1,0 +1,38 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "description": "ShortUrl",
+  "main": "app.js",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-react-views": "^0.11.0",
+    "mongoose": "^6.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.18"
+  },
+  "engines": {
+    "node": "14.17.4"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development node app.js",
+    "dev": "cross-env NODE_ENV=development nodemon add.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t-1000-t/node-test-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t-1000-t/node-test-1/issues"
+  },
+  "homepage": "https://github.com/t-1000-t/node-test-1#readme"
+}
