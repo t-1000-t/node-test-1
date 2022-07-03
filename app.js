@@ -19,7 +19,7 @@ app.engine('jsx', require('express-react-views').createEngine(optionsReactViews)
 
 // TODO "depending on the word, open the desired page"
 app.get("/", (req, res) => {
-    res.send("index")
+    res.render("index")
 })
 
 // TODO "page for authorization"
