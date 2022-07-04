@@ -2,7 +2,7 @@ const React = require('react')
 const DefaultLayout = require('./layouts/default')
 const { appURL } = require('../config/config')
 
-function HomePage() {
+function HomePage({ result: shortUrl }) {
     return <DefaultLayout>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
             <div className="container-fluid" bis_skin_checked="1">
@@ -70,6 +70,11 @@ function HomePage() {
                              </button>
                     </form>
                  </div>
+                   <div className="row">
+                       <div className="col">
+                           {shortUrl && <a href={shortUrl} target="_blink">{shortUrl}</a>}
+                       </div>
+                   </div>
                </div>
              </div>
     </DefaultLayout>

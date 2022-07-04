@@ -1,15 +1,6 @@
 const router = require("express").Router()
+const { createShortUrl } = require("./createShortUrl")
 
-router.post("/", (req, res) => {
-    const body = req.body
-
-    res.send(body)
-})
-
-router.get("/", (req, res) => {
-    const body = req.body
-
-    res.send(body)
-})
+router.post("/", createShortUrl)
 
 module.exports = router
