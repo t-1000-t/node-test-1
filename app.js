@@ -3,6 +3,8 @@ const app = express()
 const logger = require("morgan")
 const config = require("./config/config")
 const apiRouter = require("./router/router")
+const getUrl = require("./src/urls/getUrlById")
+
 
 require('./db/connectionDB')()
 
@@ -18,6 +20,7 @@ app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine(optionsReactViews))
 
 // TODO "depending on the word, open the desired page"
+app.get('/:shortUrlId', getUrl)
 app.get("/", (req, res) => {
     const query = req.query
 

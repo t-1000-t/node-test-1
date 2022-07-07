@@ -72,7 +72,7 @@ function HomePage({ result: shortUrl }) {
                  </div>
                    <div className="row">
                        <div className="col">
-                           {shortUrl && <a href={shortUrl} target="_blink">{shortUrl}</a>}
+                           {shortUrl && <a href={shortUrl} className="btn btn-outline-dark" target="_blink">{shortUrl}</a>}
                        </div>
                    </div>
                </div>
