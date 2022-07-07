@@ -28,9 +28,15 @@ app.get("/", (req, res) => {
 })
 
 // TODO "page for authorization"
-app.use("/sing-in", () => {})
-app.use("/sing-up", () => {})
-app.use("/dashboard", () => {})
+app.get("/sign-in", (req, res) => {
+    res.render("signIn")
+})
+app.get("/sign-up", (req, res) => {
+    res.render("register")
+})
+app.get("/dashboard", (req, res) => {
+    res.render("index")
+})
 
 // TODO "API urls for work"
 app.use("/api", apiRouter)
